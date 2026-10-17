@@ -1,0 +1,236 @@
+<title>Stanlei &amp; Fernanda</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Tudo o que você precisa saber para o nosso grande dia: cerimônia, recepção e guia de trajes.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2f2a1f">
+<meta property="og:title" content="Stanlei & Fernanda · 15.08.2027">
+<meta property="og:description" content="Cada detalhe feito para emocionar e ficar na memória.">
+<meta property="og:image" content="assets/img/save-the-date.jpeg">
+<script>document.documentElement.className='js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,600&family=Montserrat:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Fundo fixo: vídeo preso ao scroll (assets/video/praia.mp4). Sem vídeo, usa a foto do save the date. -->
+<div class="stage" aria-hidden="true">
+  <video id="bgVideo" muted playsinline preload="auto" hidden></video>
+  <img id="bgPhoto" src="assets/img/save-the-date.jpeg" alt="" width="900" height="1600">
+  <div class="scrim"></div>
+</div>
+
+<main>
+
+  <!-- ENTRADA: sem escolha, só esta tela existe. Com escolha, vira a abertura da página. -->
+  <section id="entrada" class="hero">
+    <p class="kicker">Com carinho…</p>
+    <h1 class="monogram"><img src="assets/img/monograma-claro.png" alt="SF" width="485" height="394"></h1>
+    <p class="names">Stanlei &amp; Fernanda</p>
+    <p class="date">15 · 08 · 2027</p>
+    <p class="place"><span>Praia do Estaleiro</span><span>Balneário Camboriú</span></p>
+
+    <div class="gate" id="gate">
+      <p class="gate-title">Como você chega até nós?</p>
+      <div class="gate-btns">
+        <button class="btn btn-light" type="button" data-role="convidado">Sou convidado</button>
+        <button class="btn btn-ghost" type="button" data-role="padrinhos">Sou padrinho ou madrinha</button>
+      </div>
+    </div>
+
+    <div class="greet">
+      <p class="greet-line" data-for="convidado">Que bom ter você com a gente.</p>
+      <p class="greet-line" data-for="padrinhos">Padrinhos e madrinhas, vocês estão no centro desse dia.</p>
+      <p class="down">Role para baixo</p>
+      <button class="swap" type="button">Trocar acesso</button>
+    </div>
+  </section>
+
+  <!-- O GRANDE DIA: contagem + cerimônia + recepção -->
+  <section id="dia" class="clear">
+    <div class="wrap">
+      <p class="eyebrow" data-reveal="fade">Faltam</p>
+      <div class="count" id="count" data-reveal="fade">
+        <div><b id="cd">--</b><small>dias</small></div>
+        <div><b id="ch">--</b><small>horas</small></div>
+        <div><b id="cm">--</b><small>min</small></div>
+        <div><b id="cs">--</b><small>seg</small></div>
+      </div>
+
+      <div class="cards">
+        <article class="card strong" data-for="padrinhos" data-reveal="3d">
+          <p class="card-tag">Padrinhos e madrinhas</p>
+          <p class="card-when"><b>Cheguem às 15h</b><span>30 minutos antes da cerimônia</span></p>
+          <p class="card-where">Para o alinhamento dos últimos detalhes. Todos já vestidos, com a gravata e a pulseira que vieram na caixa.</p>
+        </article>
+
+        <article class="card" data-reveal="3d">
+          <p class="card-tag">Cerimônia</p>
+          <p class="card-when"><b>15 de agosto de 2027</b><span>às 15:30</span></p>
+          <p class="card-where">Praia do Estaleiro<br>Balneário Camboriú / SC</p>
+          <div class="btn-row">
+            <a class="btn btn-solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Praia+do+Estaleiro+Balne%C3%A1rio+Cambori%C3%BA+SC">Maps</a>
+            <a class="btn btn-line" target="_blank" rel="noopener" href="https://waze.com/ul?q=Praia%20do%20Estaleiro%20Balne%C3%A1rio%20Cambori%C3%BA">Waze</a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal="3d">
+          <p class="card-tag">Recepção</p>
+          <p class="card-when"><b>Salão Indaiá</b><span>logo após a cerimônia</span></p>
+          <p class="card-where">Itapema / SC<br>15 a 20 min de carro da praia</p>
+          <div class="btn-row">
+            <a class="btn btn-solid" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sal%C3%A3o+Indai%C3%A1+Itapema+SC">Maps</a>
+            <a class="btn btn-line" target="_blank" rel="noopener" href="https://waze.com/ul?q=Sal%C3%A3o%20Indai%C3%A1%20Itapema%20SC">Waze</a>
+          </div>
+        </article>
+      </div>
+
+      <button class="btn btn-ghost block" type="button" id="addCal">Adicionar ao calendário</button>
+    </div>
+  </section>
+
+  <!-- RESPIRO: o vídeo aparece -->
+  <section class="breath" aria-hidden="true">
+    <p class="script-line" data-split="words">Cada detalhe feito para emocionar e ficar na memória</p>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section id="historia" class="panel">
+    <div class="wrap">
+      <i class="lily" aria-hidden="true"></i>
+      <h2 class="title" data-split="chars">Nossa história</h2>
+      <p class="lead">[Aqui entra o texto da história de Stanlei e Fernanda: como se conheceram, o que os fez ter certeza e o que sonham para esse dia.]</p>
+
+      <div class="snap" data-reveal="fade" tabindex="0" aria-label="Capítulos da nossa história">
+        <article class="story-card">
+          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 1</b><span>Vertical 4:5</span></div></figure>
+          <h3>O começo</h3>
+          <p>[Parágrafo sobre como tudo começou.]</p>
+        </article>
+        <article class="story-card">
+          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 2</b><span>Vertical 4:5</span></div></figure>
+          <h3>O caminho</h3>
+          <p>[Parágrafo sobre o que viveram juntos até aqui.]</p>
+        </article>
+        <article class="story-card">
+          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 3</b><span>Vertical 4:5</span></div></figure>
+          <h3>O agora</h3>
+          <p>[Parágrafo sobre o que sentem e esperam do grande dia.]</p>
+        </article>
+      </div>
+      <p class="swipe-hint" aria-hidden="true">Deslize para o lado →</p>
+    </div>
+  </section>
+
+  <section class="gap" aria-hidden="true"></section>
+
+  <!-- GUIA PADRINHOS E MADRINHAS -->
+  <section id="guia-padrinhos" class="panel" data-for="padrinhos">
+    <div class="wrap narrow">
+      <i class="lily" aria-hidden="true"></i>
+      <h2 class="title" data-split="chars">Madrinhas e padrinhos</h2>
+
+      <div class="palette" aria-label="Paleta de cores"><span style="--c:#4a4f2a"></span><span style="--c:#727d58"></span><span style="--c:#98946a"></span></div>
+      <p class="palette-note">Paleta de cores do casamento</p>
+
+      <article class="dress-card">
+        <div class="crop crop-dress" role="img" aria-label="Inspirações de vestidos longos em tons de verde"></div>
+        <div>
+          <h3>Madrinha</h3>
+          <p>Vestido longo e na cor da paleta é a única coisa que pedimos. Madrinhas arrasem no look!</p>
+        </div>
+      </article>
+
+      <article class="dress-card">
+        <div class="crop crop-suit" role="img" aria-label="Terno cinza-claro com camisa branca e gravata verde"></div>
+        <div>
+          <h3>Padrinho</h3>
+          <p>Terno cinza-claro, em lã fria de gramatura média, com corte alinhado e dois botões. Para completar o traje, camisa branca e a gravata que preparamos com carinho e entregamos junto ao convite.</p>
+        </div>
+      </article>
+
+      <div class="acc">
+        <details open>
+          <summary>Dicas importantes</summary>
+          <ul class="tips">
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="14"/><path d="M24 17v9l6 4M10 10l6-4M38 10l-6-4"/></svg>
+              <p>Cheguem com 30 minutos de antecedência, às 15h, para alinhamento dos últimos detalhes.</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="14" width="38" height="25" rx="3"/><circle cx="24" cy="26" r="7"/><path d="M16 14l3-5h10l3 5"/></svg>
+              <p>Fotos são importantes para o registro desse momento inesquecível! Tirem muitas fotos!</p>
+            </li>
+            <li>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="14"/><path d="M10 26h28M24 12v28M14 16c6 4 14 4 20 0M14 36c6-4 14-4 20 0M24 12V6"/></svg>
+              <p>Todos já vestidos, com a gravata e a pulseira que vieram nesta caixa, e posicionados. Meia hora de folga para ajustar o que precisar, cumprimentar e fotografar antes de todo mundo chegar.</p>
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Para aproveitar a praia</summary>
+          <ul class="beach">
+            <li><b>Areia</b><span>Prefira sandália, rasteira ou salto bloco.</span></li>
+            <li><b>Vento</b><span>Em agosto o fim de tarde esfria. Leve um casaco.</span></li>
+            <li><b>Sol</b><span>Protetor solar e óculos ajudam durante a cerimônia.</span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIA CONVIDADOS -->
+  <section id="guia-convidados" class="panel" data-for="convidado">
+    <div class="wrap narrow">
+      <i class="lily" aria-hidden="true"></i>
+      <h2 class="title" data-split="chars">Guia do convidado</h2>
+      <div class="acc">
+        <details open>
+          <summary>Traje</summary>
+          <p>[Em definição com os noivos. Aqui entra a orientação de traje para os convidados.]</p>
+        </details>
+        <details>
+          <summary>Para aproveitar a praia</summary>
+          <ul class="beach">
+            <li><b>Areia</b><span>Prefira sandália, rasteira ou salto bloco.</span></li>
+            <li><b>Vento</b><span>Em agosto o fim de tarde esfria. Leve um casaco.</span></li>
+            <li><b>Sol</b><span>Protetor solar e óculos ajudam durante a cerimônia.</span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="gap" aria-hidden="true"></section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="panel">
+    <div class="wrap">
+      <i class="lily" aria-hidden="true"></i>
+      <h2 class="title" data-split="chars">Galeria</h2>
+      <div class="grid">
+        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 4</b><span>3:4</span></div></figure>
+        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 5</b><span>3:4</span></div></figure>
+        <figure class="slot wide" data-reveal="photo" style="--r:16/9"><div class="slot-in"><b>Foto 6</b><span>Horizontal 16:9</span></div></figure>
+        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 7</b><span>3:4</span></div></figure>
+        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 8</b><span>3:4</span></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="gap" aria-hidden="true"></section>
+
+</main>
+
+<footer class="footer">
+  <p class="kicker">Com carinho…</p>
+  <p class="monogram sm"><img src="assets/img/monograma-claro.png" alt="SF" width="485" height="394"></p>
+  <p class="names">Stanlei &amp; Fernanda</p>
+  <p class="date">15 · 08 · 2027</p>
+  <button class="swap" type="button">Trocar acesso</button>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
