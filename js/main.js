@@ -95,15 +95,21 @@
   }, { once: true, passive: true });
 
   // Sem vídeo: a foto "caminha" pela faixa limpa (sem o texto do save the date).
+  // O casal ocupa x 272..580 da foto; o zoom e a deriva lateral nunca deixam ninguém fora do quadro.
   const IMG_W = 900, IMG_H = 1600, Y_MIN = 600, Y_MAX = 1300, COUPLE_X = 430;
+  const C_L = 272, C_R = 580, C_PAD = 8, MIN_WIN_W = 322;
   function placePhoto(p) {
     const vw = innerWidth, vh = innerHeight;
-    // Aproxima devagar enquanto rola (zoom 1x a 1.4x) e caminha pela areia.
-    const s = Math.max(vw / IMG_W, vh / (Y_MAX - Y_MIN)) * (1 + 0.4 * p);
+    // Aproxima devagar enquanto rola (zoom até 1.4x), mas em tela estreita pára antes de cortar o casal.
+    const floor = Math.max(vw / IMG_W, vh / (Y_MAX - Y_MIN));
+    const s = Math.max(floor, Math.min(floor * (1 + 0.4 * p), vw / MIN_WIN_W));
     const winW = vw / s, winH = vh / s;
     const y0 = Y_MIN + p * Math.max(0, Y_MAX - winH - Y_MIN);
     const half = winW / 2;
-    const cx = Math.min(IMG_W - half, Math.max(half, COUPLE_X + (p - 0.5) * 140));
+    const lo = C_R + C_PAD - half, hi = C_L - C_PAD + half;   // janela que ainda contém o casal
+    let cx = COUPLE_X + (p - 0.5) * 140;
+    cx = lo <= hi ? Math.min(hi, Math.max(lo, cx)) : (C_L + C_R) / 2;
+    cx = Math.min(IMG_W - half, Math.max(half, cx));
     photo.style.width = IMG_W * s + 'px';
     photo.style.height = IMG_H * s + 'px';
     photo.style.transform = `translate3d(${-(cx - half) * s}px,${-y0 * s}px,0)`;
