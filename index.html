@@ -1,8 +1,16 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Stanlei &amp; Fernanda</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Tudo o que você precisa saber para o nosso grande dia: cerimônia, recepção e guia de trajes.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#2f2a1f">
+<link rel="icon" type="image/png" href="assets/img/favicon-oliva.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-claro.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:title" content="Stanlei & Fernanda · 15.08.2027">
 <meta property="og:description" content="Cada detalhe feito para emocionar e ficar na memória.">
 <meta property="og:image" content="assets/img/save-the-date.jpeg">
@@ -33,13 +41,13 @@
       <p class="gate-title">Como você chega até nós?</p>
       <div class="gate-btns">
         <button class="btn btn-light" type="button" data-role="convidado">Sou convidado</button>
-        <button class="btn btn-ghost" type="button" data-role="padrinhos">Sou padrinho ou madrinha</button>
+        <button class="btn btn-ghost" type="button" data-role="cortejo">Faço parte do cortejo</button>
       </div>
     </div>
 
     <div class="greet">
       <p class="greet-line" data-for="convidado">Que bom ter você com a gente.</p>
-      <p class="greet-line" data-for="padrinhos">Padrinhos e madrinhas, vocês estão no centro desse dia.</p>
+      <p class="greet-line" data-for="cortejo">Vocês estão no centro desse dia.</p>
       <p class="down">Role para baixo</p>
       <button class="swap" type="button">Trocar acesso</button>
     </div>
@@ -57,10 +65,10 @@
       </div>
 
       <div class="cards">
-        <article class="card strong" data-for="padrinhos" data-reveal="3d">
-          <p class="card-tag">Padrinhos e madrinhas</p>
+        <article class="card strong" data-for="cortejo" data-reveal="3d">
+          <p class="card-tag">Cortejo</p>
           <p class="card-when"><b>Cheguem às 15h</b><span>30 minutos antes da cerimônia</span></p>
-          <p class="card-where">Para o alinhamento dos últimos detalhes. Todos já vestidos, com a gravata e a pulseira que vieram na caixa.</p>
+          <p class="card-where">Para o alinhamento dos últimos detalhes. Todos já vestidos, com as peças que vieram na caixa.</p>
         </article>
 
         <article class="card" data-reveal="3d">
@@ -98,23 +106,25 @@
     <div class="wrap">
       <i class="lily" aria-hidden="true"></i>
       <h2 class="title" data-split="chars">Nossa história</h2>
-      <p class="lead">[Aqui entra o texto da história de Stanlei e Fernanda: como se conheceram, o que os fez ter certeza e o que sonham para esse dia.]</p>
 
       <div class="snap" data-reveal="fade" tabindex="0" aria-label="Capítulos da nossa história">
         <article class="story-card">
-          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 1</b><span>Vertical 4:5</span></div></figure>
-          <h3>O começo</h3>
-          <p>[Parágrafo sobre como tudo começou.]</p>
+          <figure class="slot has-img" style="--r:4/5"><img src="assets/img/historia-1.jpg" alt="Stanlei e Fernanda sorrindo, de mãos dadas, caminhando na beira do mar" loading="lazy" decoding="async"></figure>
+          <h3>O início</h3>
+          <p>Não foi planejado.<br>Teve desafios, incertezas, desencontros.<br>Mas algumas histórias começam assim: testando se vale a pena.<br>E valeu.</p>
         </article>
         <article class="story-card">
-          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 2</b><span>Vertical 4:5</span></div></figure>
+          <figure class="slot has-img" style="--r:4/5"><img src="assets/img/historia-2.jpg" alt="Fernanda nas costas de Stanlei, os dois sorrindo na praia" loading="lazy" decoding="async"></figure>
           <h3>O caminho</h3>
-          <p>[Parágrafo sobre o que viveram juntos até aqui.]</p>
+          <p>Aos poucos, a vida foi nos aproximando.<br>Dia após dia, a dúvida virou vontade.<br>E a vontade virou certeza.</p>
+          <p>Somos diferentes. E ainda bem.<br>Um é pausa, o outro é melodia.<br>Um acalma, o outro acende.<br>Foi nas nossas diferenças que encontramos equilíbrio.</p>
+          <p>Afinal, o som só existe porque há silêncio.<br>A luz só brilha porque conhece o escuro.<br>Há coisas que não têm explicação.<br>Elas simplesmente se completam.</p>
         </article>
         <article class="story-card">
-          <figure class="slot" style="--r:4/5"><div class="slot-in"><b>Foto 3</b><span>Vertical 4:5</span></div></figure>
-          <h3>O agora</h3>
-          <p>[Parágrafo sobre o que sentem e esperam do grande dia.]</p>
+          <figure class="slot has-img" style="--r:4/5"><img src="assets/img/historia-3.jpg" alt="Stanlei e Fernanda abraçados na praia ao pôr do sol" loading="lazy" decoding="async"></figure>
+          <h3>Até hoje</h3>
+          <p>Hoje, olhamos para trás e entendemos.<br>Nada foi por acaso.<br>Cada passo nos trouxe até aqui.</p>
+          <p>E aqui, decidimos o mais bonito de tudo:<br>passar o resto da vida juntos.</p>
         </article>
       </div>
       <p class="swipe-hint" aria-hidden="true">Deslize para o lado →</p>
@@ -123,59 +133,240 @@
 
   <section class="gap" aria-hidden="true"></section>
 
-  <!-- GUIA PADRINHOS E MADRINHAS -->
-  <section id="guia-padrinhos" class="panel" data-for="padrinhos">
+  <!-- GUIA DO CORTEJO: padrinhos, madrinhas, família dos noivos e crianças -->
+  <section id="guia-cortejo" class="panel" data-for="cortejo">
     <div class="wrap narrow">
       <i class="lily" aria-hidden="true"></i>
-      <h2 class="title" data-split="chars">Madrinhas e padrinhos</h2>
+      <h2 class="title" data-split="chars">Guia do cortejo</h2>
+      <p class="lead">Padrinhos, madrinhas, pais, filhos e crianças do cortejo. A sua gravata, pulseira ou peça já está na caixa. Aqui vai o resto: cores, tecidos, calçado e o que o vento da praia exige de cada um.</p>
 
-      <div class="palette" aria-label="Paleta de cores"><span style="--c:#4a4f2a"></span><span style="--c:#727d58"></span><span style="--c:#98946a"></span></div>
-      <p class="palette-note">Paleta de cores do casamento</p>
+      <h3 class="sec">O dia, hora a hora</h3>
+      <p>Domingo, 15 de agosto de 2027. Cerimônia na <b>Praia do Estaleiro</b>, em Balneário Camboriú, e recepção no <b>Salão Indaiá</b>, em Itapema — cerca de 10 km entre um e outro. A pontualidade das 15h não é formalidade: é o tempo de alinhar a fila, conferir os detalhes e fazer as fotos com calma antes da cerimônia começar. Fotos são importantes para o registro desse momento inesquecível: tirem muitas!</p>
+      <ol class="timeline">
+        <li><time>15h00</time><div><h4>Chegada na Praia do Estaleiro</h4><p>Todos já vestidos, <b>com a gravata e a pulseira que vieram nesta caixa</b>, e posicionados. Meia hora de folga para ajustar o que precisar, cumprimentar e fotografar antes de todo mundo chegar.</p><p class="kids-note"><b>Com crianças:</b> elas já vestidas, com as peças da caixa. Meia hora para se acostumarem com a areia, o vento e o barulho do mar antes de todo mundo chegar — com criança pequena, esse tempo muda tudo.</p></div></li>
+        <li><time>15h30</time><div><h4>Cerimônia</h4><p>Na areia do Estaleiro, com o sol ainda alto mas já caindo. Padrinhos de paletó fechado. Em seguida, as fotos com a luz de fim de tarde.</p><p class="kids-note"><b>Com crianças:</b> cada uma tem um adulto de referência combinado antes, que fica sentado na ponta da primeira fila, à vista. Quem não quiser entrar na hora, não entra — e está tudo bem.</p></div></li>
+        <li><time>17h00</time><div><h4>Entrada no Salão Indaiá</h4><p>São cerca de 10 km do Estaleiro até o salão, em Itapema — de 15 a 20 minutos de carro em condições normais. Saiam da praia assim que as fotos terminarem. É no carro que dá para trocar o calçado e pegar o agasalho: a temperatura cai de forma perceptível nessa hora.</p><p class="kids-note"><b>Com crianças:</b> é no trajeto que dá para trocar o calçado, limpar a areia e oferecer um lanche.</p></div></li>
+      </ol>
 
-      <article class="dress-card">
-        <div class="crop crop-dress" role="img" aria-label="Inspirações de vestidos longos em tons de verde"></div>
-        <div>
-          <h3>Madrinha</h3>
-          <p>Vestido longo e na cor da paleta é a única coisa que pedimos. Madrinhas arrasem no look!</p>
-        </div>
-      </article>
+      <h3 class="sec">As cores</h3>
+      <h4>Cores do casamento</h4>
+      <p>A paleta oficial vai do oliva profundo ao champanhe — é a mesma dos convites, da decoração e das mesas. O marsala entra apenas nos pais dos noivos e nos filhos, marcando quem é família.</p>
+      <ul class="swatches"><li style="--c:#464D2B"><i></i><b>Oliva profundo</b><small>#464D2B</small></li><li style="--c:#747E5C"><i></i><b>Oliva médio</b><small>#747E5C</small></li><li style="--c:#95946A"><i></i><b>Oliva claro</b><small>#95946A</small></li><li style="--c:#CEC7AD"><i></i><b>Sálvia acinzentado</b><small>#CEC7AD</small></li><li style="--c:#E1D8C9"><i></i><b>Champanhe</b><small>#E1D8C9</small></li></ul>
+      <h4>Cores do traje</h4>
+      <p>Fora da paleta decorativa, estas são as cores que vocês vão às compras procurar.</p>
+      <ul class="swatches"><li style="--c:#B9BDB9"><i></i><b>Cinza claro</b><small>#B9BDB9</small></li><li style="--c:#474B50"><i></i><b>Cinza chumbo</b><small>#474B50</small></li><li style="--c:#7C2B38"><i></i><b>Marsala</b><small>#7C2B38</small></li><li style="--c:#FCFBF8"><i></i><b>Branco</b><small>#FCFBF8</small></li><li style="--c:#9C6234"><i></i><b>Marrom caramelo</b><small>#9C6234</small></li><li style="--c:#5A3520"><i></i><b>Marrom café</b><small>#5A3520</small></li></ul>
+      <h4>Cores das crianças</h4>
+      <p>São só quatro. Cada grupo tem a sua, e o branco atravessa os três.</p>
+      <ul class="swatches"><li style="--c:#F7F3EA"><i></i><b>Branco / off-white</b><small>#F7F3EA</small></li><li style="--c:#5F6B41"><i></i><b>Verde oliva</b><small>#5F6B41</small></li><li style="--c:#C2A87C"><i></i><b>Bege sarja</b><small>#C2A87C</small></li><li style="--c:#26262A"><i></i><b>Preto</b><small>#26262A</small></li></ul>
 
-      <article class="dress-card">
-        <div class="crop crop-suit" role="img" aria-label="Terno cinza-claro com camisa branca e gravata verde"></div>
-        <div>
-          <h3>Padrinho</h3>
-          <p>Terno cinza-claro, em lã fria de gramatura média, com corte alinhado e dois botões. Para completar o traje, camisa branca e a gravata que preparamos com carinho e entregamos junto ao convite.</p>
-        </div>
-      </article>
+      <h3 class="sec">Os looks</h3>
+      <p>Escolha o seu. As ilustrações mostram as cores exatas de cada peça — os tons dos cinzas e dos marrons são referências, não precisam ser idênticos ao pixel, mas devem ficar dentro da mesma família.</p>
+      <div class="looks">
+        <div class="chips" role="tablist" aria-label="Escolha o seu look"><button class="chip" type="button" role="tab" id="tab-padrinho" aria-controls="look-padrinho" aria-selected="true">Padrinho</button><button class="chip" type="button" role="tab" id="tab-madrinha" aria-controls="look-madrinha" aria-selected="false">Madrinha</button><button class="chip" type="button" role="tab" id="tab-pais" aria-controls="look-pais" aria-selected="false">Pais</button><button class="chip" type="button" role="tab" id="tab-maes" aria-controls="look-maes" aria-selected="false">Mães</button><button class="chip" type="button" role="tab" id="tab-filha" aria-controls="look-filha" aria-selected="false">Filha da noiva</button><button class="chip" type="button" role="tab" id="tab-filho" aria-controls="look-filho" aria-selected="false">Filho do noivo</button><button class="chip" type="button" role="tab" id="tab-daminhas" aria-controls="look-daminhas" aria-selected="false">Daminhas</button><button class="chip" type="button" role="tab" id="tab-pajens" aria-controls="look-pajens" aria-selected="false">Pajens</button><button class="chip" type="button" role="tab" id="tab-segurancas" aria-controls="look-segurancas" aria-selected="false">Seguranças</button></div>
+        <article class="look on" role="tabpanel" id="look-padrinho" aria-labelledby="tab-padrinho">
+          <figure class="look-fig"><img src="assets/img/trajes/padrinho.png" alt="Ilustração do look de padrinho: terno cinza claro, gravata verde oliva e sapato marrom caramelo" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Padrinhos<span class="badge">Já está com você</span></h3>
+            <ul class="pieces"><li style="--c:#B9BDB9"><i></i><div><b>Terno</b><span>Cinza claro, lã fria de gramatura média. Corte alinhado, dois botões.</span></div></li><li style="--c:#FCFBF8"><i></i><div><b>Camisa</b><span>Branca lisa, colarinho tradicional. Sem estampa.</span></div></li><li style="--c:#464D2B"><i></i><div><b>Gravata</b><span>Verde oliva — já está com você: veio nesta caixa-convite.</span></div></li><li style="--c:#9C6234"><i></i><div><b>Cinto</b><span>Marrom caramelo, fivela prateada discreta.</span></div></li><li style="--c:#9C6234"><i></i><div><b>Sapato</b><span>Marrom caramelo, couro liso. Nunca preto.</span></div></li><li style="--c:#464D2B"><i></i><div><b>Meia</b><span>Longa, em verde oliva ou cinza escuro.</span></div></li><li style="--c:#E1D8C9"><i></i><div><b>Lenço</b><span>Champanhe no bolso do peito — opcional.</span></div></li></ul>
+            <p class="look-note">O marrom caramelo e o verde oliva são tons terrosos da mesma temperatura: é por isso que funcionam juntos. O preto quebra essa lógica e pesa demais sobre o cinza claro.</p>
+          </div>
+          <div class="inspo"><div class="crop crop-suit" role="img" aria-label="Inspiração: terno cinza-claro com camisa branca e gravata verde"></div><p>Inspiração</p></div>
+        </article>
+        <article class="look" role="tabpanel" id="look-madrinha" aria-labelledby="tab-madrinha">
+          <figure class="look-fig"><img src="assets/img/trajes/madrinha.png" alt="Ilustração do look de madrinha: vestido longo verde oliva" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Madrinhas<span class="badge">Já está com você</span></h3>
+            <ul class="pieces"><li style="--c:#747E5C"><i></i><div><b>Vestido</b><span>Verde oliva, entre o oliva profundo e o oliva claro da paleta.</span></div></li><li style="--c:#CEC7AD"><i></i><div><b>Pulseira</b><span>Já está com você: veio nesta caixa-convite.</span></div></li><li style="--c:#C8A07F"><i></i><div><b>Sapato</b><span>Salto bloco, anabela ou flatform. Nude, dourado fosco ou caramelo.</span></div></li><li style="--c:#747E5C"><i></i><div><b>Agasalho</b><span>Xale ou pashmina em verde oliva, no tom do vestido ou um pouco mais escuro.</span></div></li><li style="--c:#CEC7AD"><i></i><div><b>Acessórios</b><span>Dourados. Pulso livre para a pulseira.</span></div></li></ul>
+            <p class="look-note">Salto fino afunda na areia logo no primeiro passo. A base larga do salto bloco resolve a praia sem abrir mão da altura — e, se quiserem, o salto fino volta no salão, às 17h.</p>
+          </div>
+          <div class="inspo"><div class="crop crop-dress" role="img" aria-label="Inspiração: vestidos longos em tons de verde"></div><p>Inspiração</p></div>
+    <div class="fan">
+      <h4>O leque de verdes</h4>
+      <p>Vocês não precisam achar o verde exato — precisam ficar dentro da família. Estes são os três tons liberados para o vestido, na ordem do mais escuro ao mais claro. Qualquer verde oliva entre eles funciona.</p>
+      <ul>
+        <li><img src="assets/img/trajes/verde-profundo.png" alt="Vestido em oliva profundo" loading="lazy"><b>Oliva profundo</b><small>#464D2B</small></li>
+        <li><img src="assets/img/trajes/verde-medio.png" alt="Vestido em oliva médio" loading="lazy"><b>Oliva médio</b><small>#747E5C</small></li>
+        <li><img src="assets/img/trajes/verde-claro.png" alt="Vestido em oliva claro" loading="lazy"><b>Oliva claro</b><small>#95946A</small></li>
+      </ul>
+      <p><b>É verde oliva, do vestido aos acessórios.</b> Os dois tons mais claros da paleta do casamento — sálvia e champanhe — ficam por conta da decoração, não do traje das madrinhas. Na areia, de longe, eles leem como bege claro e se aproximam demais do vestido da noiva.</p>
+      <p><b>Duas formas de combinar, as duas certas:</b> ou todas no mesmo tom, para um bloco de cor firme na fila; ou espalhadas entre os três verdes, criando um degradê natural nas fotos. Combinem entre vocês antes de comprar — o que não funciona é uma sozinha num tom muito diferente das demais.</p>
+      <p><b>Tecido:</b> prefiram tecidos com caimento e pouco brilho — crepe, musseline, zibeline fosca. Cetim muito brilhante reflete o sol da praia e estoura nas fotos.</p>
+    </div>
+        </article>
+        <article class="look" role="tabpanel" id="look-pais" aria-labelledby="tab-pais">
+          <figure class="look-fig"><img src="assets/img/trajes/pais.png" alt="Ilustração do look dos pais dos noivos: terno cinza chumbo, gravata marsala e sapato marrom café" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Pais dos noivos<span class="badge">Já está com você</span></h3>
+            <ul class="pieces"><li style="--c:#474B50"><i></i><div><b>Terno</b><span>Cinza chumbo, lã fria. O traje mais formal do grupo.</span></div></li><li style="--c:#FCFBF8"><i></i><div><b>Camisa</b><span>Branca lisa, bem passada.</span></div></li><li style="--c:#7C2B38"><i></i><div><b>Gravata</b><span>Marsala — já está com você: veio nesta caixa-convite.</span></div></li><li style="--c:#5A3520"><i></i><div><b>Cinto</b><span>Marrom café, fivela prateada discreta.</span></div></li><li style="--c:#5A3520"><i></i><div><b>Sapato</b><span>Marrom café, couro liso — oxford ou derby. Preto é alternativa aceita.</span></div></li><li style="--c:#474B50"><i></i><div><b>Meia</b><span>Longa, cinza escura ou preta.</span></div></li><li style="--c:#E1D8C9"><i></i><div><b>Lenço</b><span>Champanhe no bolso do peito — opcional.</span></div></li></ul>
+            <p class="look-note">O marsala tem fundo avermelhado, e o marrom café puxa a mesma temperatura: por isso o par fica mais rico do que com preto.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-maes" aria-labelledby="tab-maes">
+          <figure class="look-fig"><img src="assets/img/trajes/mae.png" alt="Ilustração do look das mães dos noivos: vestido longo marsala" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Mães dos noivos</h3>
+            <ul class="pieces"><li style="--c:#7C2B38"><i></i><div><b>Vestido</b><span>Marsala, modelo e comprimento a critério de cada uma.</span></div></li><li style="--c:#C8A07F"><i></i><div><b>Sapato</b><span>Salto bloco ou anabela, na cor que preferirem.</span></div></li></ul>
+            <p class="look-note">Para as mães, o marsala do vestido é a única definição. Sapato, acessórios, agasalho e penteado ficam inteiramente a critério de cada uma.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-filha" aria-labelledby="tab-filha">
+          <figure class="look-fig"><img src="assets/img/trajes/filha.png" alt="Ilustração do look da filha da noiva: vestido marsala" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Filha da noiva</h3>
+            <ul class="pieces"><li style="--c:#7C2B38"><i></i><div><b>Vestido</b><span>Marsala, acompanhando as mães.</span></div></li><li style="--c:#CEC7AD"><i></i><div><b>Sapato</b><span>Confortável e de base larga — ela vai correr na areia.</span></div></li><li style="--c:#C8A07F"><i></i><div><b>Agasalho</b><span>Casaquinho ou bolero em nude, dourado ou marsala.</span></div></li></ul>
+            <p class="look-note">Quem usa marsala é a família: as mães, a filha da noiva e o filho do noivo. É o que distingue visualmente o núcleo familiar da fila de padrinhos e madrinhas em verde oliva.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-filho" aria-labelledby="tab-filho">
+          <figure class="look-fig"><img src="assets/img/trajes/filho.png" alt="Ilustração do look do filho do noivo: terno cinza chumbo e gravata marsala" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Filho do noivo<span class="badge">Já está com você</span></h3>
+            <ul class="pieces"><li style="--c:#474B50"><i></i><div><b>Terno</b><span>Cinza chumbo, igual ao dos pais dos noivos.</span></div></li><li style="--c:#FCFBF8"><i></i><div><b>Camisa</b><span>Branca lisa.</span></div></li><li style="--c:#7C2B38"><i></i><div><b>Gravata</b><span>Marsala — já está com você: veio nesta caixa-convite.</span></div></li><li style="--c:#5A3520"><i></i><div><b>Cinto</b><span>Marrom café, igual ao sapato.</span></div></li><li style="--c:#5A3520"><i></i><div><b>Sapato</b><span>Marrom café, couro liso.</span></div></li></ul>
+            <p class="look-note">O look é o mesmo dos pais dos noivos, em escala menor. Se o terno infantil sair num chumbo levemente diferente, tudo bem: o que importa é a família ler como um bloco nas fotos.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-daminhas" aria-labelledby="tab-daminhas">
+          <figure class="look-fig"><img src="assets/img/trajes/daminha.png" alt="Ilustração do look das daminhas: vestido branco com laço verde oliva na cintura" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Daminhas<span class="badge">Laço na caixa</span></h3><p class="look-sub">2 crianças</p>
+            <ul class="pieces"><li style="--c:#F7F3EA"><i></i><div><b>Vestido</b><span>Branco ou off-white, liso. Confortável, sem armação nem renda que coce.</span></div></li><li style="--c:#5F6B41"><i></i><div><b>Laço</b><span>Verde oliva, na cintura do vestido e amarrado atrás — já está com vocês: veio nesta caixa-convite.</span></div></li><li style="--c:#F7F3EA"><i></i><div><b>Meia-calça</b><span>Branca ou off-white, no mesmo tom do vestido.</span></div></li><li style="--c:#F7F3EA"><i></i><div><b>Sapato</b><span>Branco ou off-white, já amaciado. Nunca estreando no dia.</span></div></li><li style="--c:#E1D8C9"><i></i><div><b>Agasalho</b><span>Casaquinho ou manta em tom neutro para o fim da tarde.</span></div></li></ul>
+            <p class="look-note">Com as menores, conforto manda em tudo. Vestido que não aperte e que deixe andar livre, sapato macio e já usado, e nada de etiqueta raspando o pescoço — é o que separa uma criança sorrindo de uma criança chorando nas fotos.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-pajens" aria-labelledby="tab-pajens">
+          <figure class="look-fig"><img src="assets/img/trajes/pajem.png" alt="Ilustração do look dos pajens: camisa branca, suspensório e gravata borboleta verde oliva, calça bege" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Pajens<span class="badge">Suspensório e gravata na caixa</span></h3><p class="look-sub">2 crianças</p>
+            <ul class="pieces"><li style="--c:#F7F3EA"><i></i><div><b>Camisa</b><span>Branca lisa, manga longa, bem passada.</span></div></li><li style="--c:#5F6B41"><i></i><div><b>Suspensório</b><span>Verde oliva — já está com vocês: veio nesta caixa-convite.</span></div></li><li style="--c:#5F6B41"><i></i><div><b>Gravata borboleta</b><span>Verde oliva — também veio na caixa.</span></div></li><li style="--c:#C2A87C"><i></i><div><b>Calça</b><span>Sarja bege / caqui, cós ajustável se possível.</span></div></li><li style="--c:#C2A87C"><i></i><div><b>Sapato</b><span>Bege, na cor da calça — ou tênis branco limpo.</span></div></li><li style="--c:#F7F3EA"><i></i><div><b>Meia</b><span>Branca, na cor da camisa.</span></div></li></ul>
+            <p class="look-note">O verde oliva do suspensório e da gravata é o mesmo das gravatas dos padrinhos: é o que liga visualmente os pajens ao cortejo. Importante: o suspensório substitui o cinto — usar os dois juntos não funciona nem fica bem.</p>
+          </div>
+          
+        </article>
+        <article class="look" role="tabpanel" id="look-segurancas" aria-labelledby="tab-segurancas">
+          <figure class="look-fig"><img src="assets/img/trajes/seguranca.png" alt="Ilustração do look dos seguranças da aliança: terno preto com gravata preta" loading="lazy" decoding="async"></figure>
+          <div class="look-body">
+            <h3>Seguranças da aliança<span class="badge">Suspensório e gravata na caixa</span></h3><p class="look-sub">2 crianças</p>
+            <ul class="pieces"><li style="--c:#26262A"><i></i><div><b>Terno</b><span>Preto, com paletó. Tecido leve que respire, não poliéster brilhante.</span></div></li><li style="--c:#F7F3EA"><i></i><div><b>Camisa</b><span>Branca lisa por baixo.</span></div></li><li style="--c:#26262A"><i></i><div><b>Suspensório</b><span>Preto — já está com vocês: veio nesta caixa-convite.</span></div></li><li style="--c:#26262A"><i></i><div><b>Gravata</b><span>Preta — também veio na caixa.</span></div></li><li style="--c:#26262A"><i></i><div><b>Sapato</b><span>Preto, couro ou verniz fosco, já amaciado.</span></div></li><li style="--c:#26262A"><i></i><div><b>Meia</b><span>Preta, longa.</span></div></li></ul>
+            <p class="look-note">Eles são os únicos de preto na cerimônia inteira, e isso é proposital: marca a função deles. Expliquem o cargo antes — criança leva a sério carregar as alianças, e isso costuma resolver o nervosismo da entrada.</p>
+          </div>
+          
+        </article>
+      </div>
 
       <div class="acc">
-        <details open>
-          <summary>Dicas importantes</summary>
-          <ul class="tips">
-            <li>
-              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="14"/><path d="M24 17v9l6 4M10 10l6-4M38 10l-6-4"/></svg>
-              <p>Cheguem com 30 minutos de antecedência, às 15h, para alinhamento dos últimos detalhes.</p>
-            </li>
-            <li>
-              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="14" width="38" height="25" rx="3"/><circle cx="24" cy="26" r="7"/><path d="M16 14l3-5h10l3 5"/></svg>
-              <p>Fotos são importantes para o registro desse momento inesquecível! Tirem muitas fotos!</p>
-            </li>
-            <li>
-              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="14"/><path d="M10 26h28M24 12v28M14 16c6 4 14 4 20 0M14 36c6-4 14-4 20 0M24 12V6"/></svg>
-              <p>Todos já vestidos, com a gravata e a pulseira que vieram nesta caixa, e posicionados. Meia hora de folga para ajustar o que precisar, cumprimentar e fotografar antes de todo mundo chegar.</p>
-            </li>
+        <details>
+          <summary>Cinto e sapato</summary>
+          <p>A regra que vale para todos os homens: <b>o cinto tem a mesma cor e o mesmo acabamento do sapato.</b> O que muda entre os padrinhos e os pais é a intensidade do marrom, acompanhando a intensidade do cinza do terno.</p>
+          <div class="duo">
+            <div style="--c:#9C6234"><h4>Padrinhos</h4><p class="chipline"><i></i><b>Marrom caramelo</b><small>referência #9C6234</small></p><p>Couro liso, em modelo oxford, derby ou mocassim. O marrom médio é o par clássico do cinza claro e conversa diretamente com o verde oliva — os dois são tons terrosos, da mesma temperatura.</p><p><b>Evitem o preto.</b> Com cinza claro ele cria um contraste duro, formal demais, que destoa da areia e aparece como um bloco escuro nas fotos.</p></div>
+            <div style="--c:#5A3520"><h4>Pais dos noivos e filho do noivo</h4><p class="chipline"><i></i><b>Marrom café</b><small>referência #5A3520</small></p><p>O marsala tem fundo avermelhado, e o marrom escuro puxa exatamente essa mesma temperatura — dá sofisticação sem pesar. Couro liso, em modelo oxford ou derby, porque o cinza chumbo é o traje mais formal do grupo.</p><p>O preto também funciona e é aceitável para quem preferir algo mais tradicional, mas o marrom escuro fica mais elegante ao lado do marsala.</p></div>
+          </div>
+          <p><b>Detalhes que valem para os dois grupos:</b> fivela discreta e prateada (o dourado briga com o cinza); nada de verniz; meia longa, na cor do sapato ou do terno, nunca branca e nunca curta a ponto de mostrar a canela quando sentar.</p>
+          <p><b>Na areia:</b> caminhem pelo trecho de areia seca e evitem a faixa molhada, que mancha couro. Levem um pano macio no carro — cinco segundos de pano tiram a poeira de areia antes das fotos.</p>
+        </details>
+
+        <details>
+          <summary>Salto na areia (madrinhas)</summary>
+          <p>Este é o ponto que mais causa problema em casamento de praia, e a solução é simples.</p>
+          <div class="duo">
+            <div><h4>No Estaleiro · 15h30</h4><p><b>Salto bloco, anabela ou flatform.</b> A base larga distribui o peso e não afunda na areia. Salto fino ou stiletto entra na areia no primeiro passo, obriga a andar na ponta do pé e aparece torto em todas as fotos da fila.</p><p>Cor sugerida: nude, dourado fosco ou caramelo — tons que alongam a perna, combinam com o verde oliva e desaparecem discretamente na areia.</p></div>
+            <div><h4>No Indaiá · 17h</h4><p><b>Quem quiser, troca.</b> No piso do salão o salto fino volta a ser confortável e seguro. Deixem o segundo par no carro ou com alguém da organização, e façam a troca no intervalo entre a praia e a entrada.</p><p>Se preferirem um par só, mantenham o salto bloco: ele funciona igualmente bem nos dois ambientes e vocês vão passar várias horas de pé.</p></div>
+          </div>
+          <p><b>A pulseira veio nesta caixa.</b> Todas as madrinhas usam a mesma — é o elemento que une os looks. Por isso, deixem o pulso livre: nada de segundo bracelete ou relógio grande no mesmo braço. Brincos e colar ficam a critério de cada uma, preferencialmente dourados.</p>
+        </details>
+
+        <details>
+          <summary>O que veio na caixa</summary>
+          <p>Nada será entregue no dia do casamento. Cada um recebeu a sua peça junto com o manual, meses antes.</p>
+          <ul class="box">
+            <li><b>Padrinhos</b><span>1 gravata verde oliva</span></li>
+            <li><b>Madrinhas</b><span>1 pulseira</span></li>
+            <li><b>Pais dos noivos e filho do noivo</b><span>1 gravata marsala</span></li>
+            <li><b>Daminhas · 2 crianças</b><span>1 laço verde oliva de cintura para cada uma. É o laço da cintura do vestido, amarrado atrás — não é laço de cabelo. Escolham um vestido liso, sem cinto nem faixa própria, e confiram se as costas permitem amarrar por cima.</span></li>
+            <li><b>Pajens · 2 crianças</b><span>1 suspensório verde oliva e 1 gravata borboleta verde oliva para cada um. O suspensório é regulável e substitui o cinto. Regulem em casa, alguns dias antes — não no dia.</span></li>
+            <li><b>Seguranças da aliança · 2 crianças</b><span>1 suspensório preto e 1 gravata preta para cada um. O suspensório fica por baixo do paletó, visível só quando eles tiram o casaco na festa.</span></li>
+          </ul>
+          <p><b>Guardem com cuidado.</b> Falta bastante tempo até agosto de 2027 — deixem as peças na caixa e a caixa num lugar que vocês vão lembrar. Perto da data nós mandamos uma mensagem para todo mundo conferir se está tudo aí.</p>
+          <p><b>Crianças crescem.</b> As peças da caixa (laço, suspensório e gravata) são reguláveis e continuarão servindo, mas as roupas e os sapatos não: comprem tudo perto da data, não agora.</p>
+        </details>
+
+        <details>
+          <summary>Criança na praia</summary>
+          <p>A cerimônia é na areia, às 15h30, com vento e 40 minutos de duração. Estas dicas resolvem quase tudo.</p>
+          <ul class="beach tall">
+            <li><b>Areia e calçado</b><span>Deixem as crianças descalças até uns minutos antes de entrar. Sapato de criança na areia vira pote de areia, e criança com areia no pé fica incomodada e reclama justamente na hora da cerimônia. Levem uma toalhinha e uma garrafa de água no carro: limpar o pé antes de calçar resolve em dez segundos o que atrapalharia a tarde inteira.</span></li>
+            <li><b>Frio, sono e fome</b><span>Às 15h30 na beira do mar faz mais frio do que a previsão diz. Levem um casaquinho ou manta neutra — bege, off-white ou verde oliva — para vestir antes e depois da cerimônia. Esse horário costuma pegar a soneca dos pequenos: ajustem o sono do dia para que elas cheguem descansadas, e ofereçam um lanche leve por volta das 14h30 — criança com fome não entra.</span></li>
+            <li><b>Um adulto por criança</b><span>Cada criança pequena precisa de um adulto de referência combinado antes, que a acompanha até a entrada e fica visível na primeira fila. Sem isso, a entrada vira improviso. Para as menores, o mais tranquilo é entrarem no colo ou de mãos dadas com esse adulto. Não há nada de errado nisso — fica lindo e evita choro.</span></li>
+            <li><b>Muda de roupa</b><span>Levem uma troca completa para cada criança, guardada no carro: roupa, meia e calçado. Areia molhada, suco derrubado e xixi acontecem, e com roupa clara não tem conserto. Vale também uma roupa mais confortável para a festa no salão, depois das fotos — elas vão querer correr, e ninguém corre bem de terno.</span></li>
+            <li><b>Ensaio</b><span>Ensaiem a entrada em casa. Uma ou duas vezes na semana do casamento, andando devagar em linha reta, é o bastante para a criança entender o que vai acontecer. Para os maiores, expliquem qual é a função deles — segurar as alianças é um cargo, e eles levam isso a sério.</span></li>
+            <li><b>Tecido</b><span>Prefiram algodão e tecidos que respiram. Nada de poliéster brilhante ou renda que coça: a criança não consegue explicar que está desconfortável, ela só fica agitada.</span></li>
           </ul>
         </details>
 
         <details>
-          <summary>Para aproveitar a praia</summary>
-          <ul class="beach">
-            <li><b>Areia</b><span>Prefira sandália, rasteira ou salto bloco.</span></li>
-            <li><b>Vento</b><span>Em agosto o fim de tarde esfria. Leve um casaco.</span></li>
-            <li><b>Sol</b><span>Protetor solar e óculos ajudam durante a cerimônia.</span></li>
-          </ul>
+          <summary>O clima na beira da praia</summary>
+          <p>Agosto é fim de inverno no litoral catarinense. O dia costuma ser agradável, mas a beira da praia é sempre mais fria do que a previsão diz — e o Estaleiro é uma praia aberta, de mar forte e vento direto. O horário da cerimônia pega justamente a virada da tarde.</p>
+          <div class="stats">
+            <div><b>20–21 °C</b><small>Máxima típica</small></div>
+            <div><b>14–16 °C</b><small>Mínima típica</small></div>
+            <div><b>~14 km/h</b><small>Vento médio</small></div>
+            <div><b>17h54</b><small>Pôr do sol</small></div>
+          </div>
+          <p><b>O vento é o fator real, não a temperatura.</b> Na areia, com vento constante e a umidade do mar, a sensação térmica fica vários graus abaixo do termômetro. Um dia de 21 °C na cidade pode ser um fim de tarde de 16 °C na beira d'água.</p>
+          <p><b>A cerimônia pega a hora da queda.</b> Às 15h30 o sol ainda está alto, mas ele se põe por volta das 17h54 — entre o começo da cerimônia e a entrada no salão, às 17h, a temperatura cai de forma bem perceptível.</p>
+          <p><b>Cabelo:</b> vento de 14 km/h desmancha escova em cinco minutos. Penteados presos, semipresos ou ondas trabalhadas com fixador aguentam a praia bem melhor do que cabelo solto e liso.</p>
+          <p><b>Chuva:</b> a chance de um dia chuvoso em agosto fica em torno de 26 a 29% — baixa, mas não zero. Vale acompanhar a previsão na semana e deixar um guarda-chuva neutro no carro.</p>
+          <p><b>Terno:</b> lã fria de gramatura média. Nada de linho, que amassa e não segura o vento, e nada de tecido pesado de inverno, porque o salão é fechado e aquece rápido. Paletó fechado durante a cerimônia — além de esquentar, evita que o vento levante as abas nas fotos.</p>
+          <p><b>Madrinhas:</b> levem um xale ou pashmina em verde oliva para vestir entre a cerimônia e o salão — no tom do próprio vestido ou um pouco mais escuro. Vestidos de alça fina ou tomara que caia pedem essa peça obrigatoriamente.</p>
+          <p><b>Crianças:</b> camada de baixo ajuda. Para as daminhas, a meia-calça branca já resolve; para pajens e seguranças, uma camiseta fina de algodão por baixo da camisa faz diferença e não aparece. Para as daminhas, prefiram cabelo preso ou semipreso e confiram o nó do laço antes da entrada: ele fica amarrado nas costas, fora do campo de visão de quem está com a criança.</p>
+        </details>
+
+        <details>
+          <summary>Checklist antes de sair de casa</summary>
+          <div class="checks">
+            <div><h4>Padrinhos e pais</h4><ul class="checklist">
+              <li>Terno no tom correto — <b>cinza claro</b> para padrinhos, <b>cinza chumbo</b> para os pais e para o filho do noivo</li>
+              <li>Camisa branca lisa, sem estampa, bem passada</li>
+              <li>Cinto e sapato na <b>mesma cor</b>, sapato de couro liso, limpo e engraxado</li>
+              <li>Meia longa combinando com terno ou sapato</li>
+              <li>Sem gravata própria — <b>usem a que veio nesta caixa</b></li>
+              <li>Lenço de bolso champanhe (opcional, mas fica lindo)</li>
+            </ul></div>
+            <div><h4>Madrinhas e mães</h4><ul class="checklist">
+              <li>Vestido no tom certo — <b>verde oliva</b> para madrinhas, <b>marsala</b> para as mães e para a filha da noiva</li>
+              <li>Tom combinado com as demais madrinhas antes de comprar</li>
+              <li>Sapato de salto bloco, anabela ou flatform, em nude, dourado ou caramelo</li>
+              <li>Segundo par para o salão (opcional)</li>
+              <li>Madrinhas: xale ou pashmina em <b>verde oliva</b></li>
+              <li>Pulso livre — <b>usem a pulseira que veio nesta caixa</b></li>
+              <li>Penteado que aguente vento de praia</li>
+            </ul></div>
+            <div><h4>Daminhas</h4><ul class="checklist">
+              <li>Vestido branco ou off-white e liso, confortável e sem armação que incomode</li>
+              <li>Meia-calça branca ou off-white</li>
+              <li>Sapato branco ou off-white, já amaciado — nada de sapato novo no dia</li>
+              <li>O laço que veio nesta caixa, na cintura e amarrado atrás</li>
+              <li>Casaquinho ou manta em tom neutro</li>
+              <li>Muda de roupa completa no carro</li>
+            </ul></div>
+            <div><h4>Pajens e seguranças</h4><ul class="checklist">
+              <li>Camisa branca lisa, bem passada</li>
+              <li>Pajens: calça sarja bege e sapato bege ou tênis branco</li>
+              <li>Seguranças: terno e sapato pretos</li>
+              <li>O suspensório e a gravata que vieram nesta caixa, já regulados</li>
+              <li>Sem cinto — o suspensório faz esse papel</li>
+              <li>Camiseta fina por baixo e muda de roupa no carro</li>
+            </ul></div>
+          </div>
         </details>
       </div>
+
+      <p class="closing">Vocês são as pessoas que escolhemos para estar ao nosso lado na areia. Obrigado por confiarem as crianças de vocês ao nosso dia. Qualquer dúvida sobre tom, tecido ou modelo, chamem a gente antes de comprar — é mais fácil resolver agora do que no dia.</p>
     </div>
   </section>
 
@@ -187,33 +378,29 @@
       <div class="acc">
         <details open>
           <summary>Traje</summary>
-          <p>[Em definição com os noivos. Aqui entra a orientação de traje para os convidados.]</p>
+          <p class="dresscode">Esporte fino</p>
+          <p>Elegante e à vontade, de acordo com uma cerimônia na areia.</p>
+          <p><b>O branco é reservado à noiva.</b></p>
+          <p>Veja em "Clima e praia" o que levar para a beira do mar.</p>
         </details>
         <details>
-          <summary>Para aproveitar a praia</summary>
+          <summary>Clima e praia</summary>
+          <p>Agosto é fim de inverno no litoral catarinense. O dia costuma ser agradável, mas a beira da praia é sempre mais fria do que a previsão diz — e o Estaleiro é uma praia aberta, de mar forte e vento direto. O horário da cerimônia pega justamente a virada da tarde.</p>
+          <div class="stats">
+            <div><b>20–21 °C</b><small>Máxima típica</small></div>
+            <div><b>14–16 °C</b><small>Mínima típica</small></div>
+            <div><b>~14 km/h</b><small>Vento médio</small></div>
+            <div><b>17h54</b><small>Pôr do sol</small></div>
+          </div>
+          <p><b>O vento é o fator real, não a temperatura.</b> Na areia, com vento constante e a umidade do mar, a sensação térmica fica vários graus abaixo do termômetro. Um dia de 21 °C na cidade pode ser um fim de tarde de 16 °C na beira d'água.</p>
+          <p><b>A cerimônia pega a hora da queda.</b> Às 15h30 o sol ainda está alto, mas ele se põe por volta das 17h54 — entre o começo da cerimônia e a entrada no salão, às 17h, a temperatura cai de forma bem perceptível.</p>
+          <p><b>Cabelo:</b> vento de 14 km/h desmancha escova em cinco minutos. Penteados presos, semipresos ou ondas trabalhadas com fixador aguentam a praia bem melhor do que cabelo solto e liso.</p>
+          <p><b>Chuva:</b> a chance de um dia chuvoso em agosto fica em torno de 26 a 29% — baixa, mas não zero. Vale acompanhar a previsão na semana e deixar um guarda-chuva neutro no carro.</p>
           <ul class="beach">
-            <li><b>Areia</b><span>Prefira sandália, rasteira ou salto bloco.</span></li>
-            <li><b>Vento</b><span>Em agosto o fim de tarde esfria. Leve um casaco.</span></li>
+            <li><b>Areia</b><span>Prefira sandália, rasteira ou salto bloco, anabela ou flatform. Salto fino afunda na areia no primeiro passo.</span></li>
             <li><b>Sol</b><span>Protetor solar e óculos ajudam durante a cerimônia.</span></li>
           </ul>
         </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="gap" aria-hidden="true"></section>
-
-  <!-- GALERIA -->
-  <section id="galeria" class="panel">
-    <div class="wrap">
-      <i class="lily" aria-hidden="true"></i>
-      <h2 class="title" data-split="chars">Galeria</h2>
-      <div class="grid">
-        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 4</b><span>3:4</span></div></figure>
-        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 5</b><span>3:4</span></div></figure>
-        <figure class="slot wide" data-reveal="photo" style="--r:16/9"><div class="slot-in"><b>Foto 6</b><span>Horizontal 16:9</span></div></figure>
-        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 7</b><span>3:4</span></div></figure>
-        <figure class="slot" data-reveal="photo" style="--r:3/4"><div class="slot-in"><b>Foto 8</b><span>3:4</span></div></figure>
       </div>
     </div>
   </section>

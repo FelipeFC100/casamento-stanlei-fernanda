@@ -19,6 +19,26 @@
   $$('[data-role]', $('#gate')).forEach(b => b.addEventListener('click', () => setRole(b.dataset.role)));
   $$('.swap').forEach(b => b.addEventListener('click', () => setRole(null)));
 
+  /* ---------- Guia do cortejo: seletor de look ---------- */
+  $$('.looks').forEach(box => {
+    const tabs = $$('[role="tab"]', box), panels = $$('.look', box);
+    const pick = i => {
+      tabs.forEach((t, k) => { t.setAttribute('aria-selected', k === i); t.tabIndex = k === i ? 0 : -1; });
+      panels.forEach((p, k) => p.classList.toggle('on', k === i));
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => pick(i));
+      t.addEventListener('keydown', ev => {
+        const d = ev.key === 'ArrowRight' ? 1 : ev.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        const n = (i + d + tabs.length) % tabs.length;
+        pick(n); tabs[n].focus();
+      });
+    });
+    pick(0);
+  });
+
   /* ---------- Contagem regressiva ---------- */
   const WEDDING = new Date('2027-08-15T15:30:00-03:00').getTime();
   const pad = n => String(n).padStart(2, '0');
@@ -111,9 +131,10 @@
     el.textContent = '';
     const out = [];
     text.split(/(\s+)/).forEach(token => {
-      if (/^\s+$/.test(token)) { el.appendChild(document.createTextNode(' ')); return; }
+      if (/^\s+$/.test(token)) return;
       const word = document.createElement('span');
-      word.style.cssText = 'display:inline-block;white-space:nowrap';
+      // O espaço vai na margem da palavra: texto solto entre os spans se perdia depois do revert do GSAP.
+      word.style.cssText = 'display:inline-block;white-space:nowrap;margin-right:.3em';
       word.setAttribute('aria-hidden', 'true');
       if (by === 'chars') {
         Array.from(token).forEach(ch => {
